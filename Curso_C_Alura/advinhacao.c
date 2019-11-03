@@ -5,7 +5,6 @@ int main(){
     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
     printf("x Bem vindo ao jogo de adivinhacao  x\n");
     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+
+    int numSec = 42;
 }
-
-int numSec = 42;
-
