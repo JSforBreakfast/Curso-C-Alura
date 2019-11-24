@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#define TENTATIVAS 5
 
 int main(){
     //imprime o cabecalho do jogo
@@ -7,12 +9,11 @@ int main(){
     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n\n");
 
     int numSec = 42;
-    
+    //int TENTATIVAS = 5;
     int chute, tentativa;
     
-    for(tentativa = 1; tentativa <= 3; tentativa++) {
-        
-        printf("Tentativa %d de 3.\n", tentativa);
+    for(tentativa = 1; tentativa <= TENTATIVAS; tentativa++) {
+        printf("Tentativa %d de %d.\n", tentativa, TENTATIVAS);
         printf("Qual é o seu chute?\n");
         scanf("%d", &chute);
         
@@ -29,7 +30,7 @@ int main(){
             
             if(chute > numSec){
                 printf("Seu chute foi maior que o número secreto.\n\n");
-               
+                printf("Tente de novo.\n\n");
             }
             
             if(chute < numSec){
