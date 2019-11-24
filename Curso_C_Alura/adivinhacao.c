@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
     //imprime o cabecalho do jogo
@@ -20,6 +21,15 @@ int main(){
     printf("Você acertou!");
     
     }else{
-        printf("Você errou.");
+        
+        printf("Você errou.\n");
+        
+        if(chute > numSec){
+            printf("Seu chute foi maior que o número secreto.\n");
+        }
+        
+        if(chute < numSec){
+            printf("Seu chute foi menor que o número secreto.\n");
+        }
     }
 }
