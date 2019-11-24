@@ -13,31 +13,32 @@ int main(){
     int chute, tentativa;
     
     for(tentativa = 1; tentativa <= TENTATIVAS; tentativa++) {
+        
         printf("Tentativa %d de %d.\n", tentativa, TENTATIVAS);
         printf("Qual é o seu chute?\n");
         scanf("%d", &chute);
         
         printf("Seu chute foi: %d.\n\n", chute);
         
+        int acertou = (chute == numSec);
+        int maior = chute > numSec;
+        int menor = chute < numSec;
+        
         if(chute == numSec){
         
         printf("Parabéns! Você acertou!\n\n");
         break;
         
-        }else{
-            
-            printf("Você errou.\n\n");
-            
-            if(chute > numSec){
+        } 
+        
+        else if(maior){
                 printf("Seu chute foi maior que o número secreto.\n\n");
-                printf("Tente de novo.\n\n");
-            }
-            
-            if(chute < numSec){
+        }
+        
+        else {
                 printf("Seu chute foi menor que o número secreto.\n\n");
-                printf("Tente de novo.\n\n");
-            }
         }
     }
+    
     printf("\n\nFim de jogo!");
 }
