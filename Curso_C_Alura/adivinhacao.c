@@ -8,14 +8,14 @@ int main(){
 
     int numSec = 42;
     
-    int = chute;
+    int chute;
     
     printf("Qual é o seu chute?\n");
     scanf("%d", &chute);
     
-    printf("Seu chute foi: %d\n", chute);
+    printf("Seu chute foi: %d.\n", chute);
     
-    if(chute === numSec){
+    if(chute == numSec){
     
     printf("Você acertou!");
     
