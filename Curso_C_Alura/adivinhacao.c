@@ -7,4 +7,19 @@ int main(){
     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
 
     int numSec = 42;
+    
+    int = chute;
+    
+    printf("Qual é o seu chute?\n");
+    scanf("%d", &chute);
+    
+    printf("Seu chute foi: %d\n", chute);
+    
+    if(chute === numSec){
+    
+    printf("Você acertou!");
+    
+    }else{
+        printf("Você errou.");
+    }
 }
