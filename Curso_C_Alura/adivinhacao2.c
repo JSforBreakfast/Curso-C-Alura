@@ -13,7 +13,7 @@ int main(){
     int chute;
     int tentativas = 1;
     int ganhou = 0;
-    double pontos = 1000;
+    float pontos = 1000;
     
     
     while(ganhou == 0) {
@@ -50,7 +50,12 @@ int main(){
         
         tentativas += 1;
         
-        double pontosPerdidos = (chute - numSec)/2.0;
+        //a função abs() converte o sinal do número entre parenteses
+        float pontosPerdidos = abs(chute - numSec)/(double)2;
+        
+        // if(pontosPerdidos < 0){
+        //     pontosPerdidos = pontosPerdidos * -1;
+        // }
         pontos = pontos - pontosPerdidos;
     }
     
