@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <math.h>
 //#define TENTATIVAS 5
 
 int main(){
@@ -8,7 +10,12 @@ int main(){
     printf("x Bem vindo ao jogo de adivinhacao  x\n");
     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n\n");
 
-    int numSec = 42;
+    int segundos = time(0);
+    srand(segundos);
+    
+    int numeroAleatorio = rand();
+    int numSec = numeroAleatorio%100;
+    
     //int TENTATIVAS = 5;
     int chute;
     int tentativas = 1;
