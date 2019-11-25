@@ -10,9 +10,10 @@ int main(){
 
     int numSec = 42;
     //int TENTATIVAS = 5;
-    int chute, tentativas = 1;
+    int chute;
+    int tentativas = 1;
     int ganhou = 0;
-    int pontos = 1000;
+    double pontos = 1000;
     
     
     while(ganhou == 0) {
@@ -49,11 +50,11 @@ int main(){
         
         tentativas += 1;
         
-        int pontosPerdidos = (chute - numSec)/2;
+        double pontosPerdidos = (chute - numSec)/2.0;
         pontos = pontos - pontosPerdidos;
     }
     
     printf("\n\nFim de jogo!\n");
     printf("Você acertou em %d tentativas.\n", tentativas);
-    printf("Total de pontos: %d \n", pontos);
+    printf("Total de pontos: %.2f \n", pontos);
 }
