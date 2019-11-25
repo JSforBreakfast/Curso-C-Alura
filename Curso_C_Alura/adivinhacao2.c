@@ -50,7 +50,7 @@ int main(){
         
         tentativas += 1;
         
-        //a função abs() converte o sinal do número entre parenteses
+        //a função abs() devolve o valor absoluto do número entre parenteses
         float pontosPerdidos = abs(chute - numSec)/(double)2;
         
         // if(pontosPerdidos < 0){
